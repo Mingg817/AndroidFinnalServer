@@ -2,8 +2,8 @@ import json
 
 from flask import Flask, request
 
-import Ashare
-
+import Ashare.Ashare as Ashare
+import Ashare.MyTT as MyTT
 
 app = Flask(__name__)
 

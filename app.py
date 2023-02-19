@@ -26,7 +26,8 @@ def request_info():
 
 def request_code_name(code):
     try:
-        return code_name[code_name['code'] == int(code[-6:])]['name'][0]
+        return code_name[code_name['code'] == int(code[-6:])]['name'].values[0]
+
     except:
         return "股票" + code
 
